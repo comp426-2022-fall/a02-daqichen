@@ -9,13 +9,13 @@ const args = minimist(process.argv.slice(2));
 var lat;
 if (args.n){ lat = args.n; }
 if (args.s){ lat = -1 * args.s; }
-lat = lat? lat:35;
+lat = lat? lat:100; //35;
 
 //Longitude
 var long;
 if (args.e){ long = args.e; }
 if (args.w){ long = -1 * args.w; }
-long = long? long:79;
+long = long? long:100; //79;
 
 //Timezone
 const timezone = args.z? args.z : moment.tz.guess();
